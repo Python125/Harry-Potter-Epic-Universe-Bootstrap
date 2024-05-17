@@ -37,20 +37,45 @@
   <body>
     <div class="container-sm mw-100 bg-primary" style="text-align: center">
       <nav>
-        <div
-          class="w3-sidebar w3-bar-block"
-          style="display: none"
-          id="mySidebar"
-        >
-          <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">
-            Close &times;
-          </button>
-          <a href="#" class="w3-bar-item w3-button">Link 1</a>
-          <a href="#" class="w3-bar-item w3-button">Link 2</a>
-          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <div class="collapse" id="sideBar">
+          <button
+            class="btn-close ms-5"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#sideBar"
+          ></button>
+          <a href="#">
+            <svg
+              id="gds-svg-502"
+              fill="rgb(34, 34, 34)"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              version="1.1"
+              focusable="false"
+              class="profile"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6 21.0008V19C6 15.6865 8.6865 13 12 13C15.3135 13 18 15.6865 18 19V21.0008C20.4289 19.1764 22 16.2718 22 13C22 7.477 17.523 3 12 3C6.477 3 2 7.477 2 13C2 16.2718 3.57108 19.1764 6 21.0008ZM15 9C15 10.657 13.657 12 12 12C10.343 12 9 10.657 9 9C9 7.343 10.343 6 12 6C13.657 6 15 7.343 15 9Z"
+                fill="white"
+              ></path></svg
+            >Account</a
+          >
         </div>
 
-        <button class="ml-5 btn btn-primary">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#sideBar"
+          style="font-size: 20px"
+        >
+          ☰
+        </button>
+
+        <!--button class="ms-5 btn btn-primary">
           <svg
             width="22px"
             height="22px"
@@ -62,15 +87,15 @@
               fill="white"
             />
           </svg>
-        </button>
+        </button-->
         <a href="https://www.universalorlando.com/web/en/us">
           <img
             src="UOR_Logo_for_Global_Navigation.png"
             alt="universal-orlando-logo"
             width="90px"
-            class="ml-5 mt-2 mb-2"
+            class="ms-5 mt-2 mb-2"
         /></a>
-        <button class="ml-5 btn btn-primary">
+        <button class="ms-5 btn btn-primary">
           <svg
             id="gds-svg-503"
             fill="rgb(34, 34, 34)"

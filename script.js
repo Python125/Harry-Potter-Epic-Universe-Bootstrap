@@ -1,8 +1,7 @@
-function w3_open() {
-  document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("mySidebar").style.display = "block";
+function openSidebar() {
+  document.getElementById("sideBar").classList.add("show");
 }
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
+function closeSidebar() {
+  document.getElementById("sideBar").classList.remove("show");
 }
